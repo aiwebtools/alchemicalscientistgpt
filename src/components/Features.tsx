@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Flame, Flask, BookOpen, Sparkles, Brain, Beaker, ScrollText } from 'lucide-react';
+import { Flame, FlaskConical, BookOpen, Sparkles, Brain, Beaker, ScrollText } from 'lucide-react';
 
 const Features = () => {
   const features = [
@@ -46,7 +46,7 @@ const Features = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center py-1 px-3 rounded-full bg-alchemist-purple/20 border border-alchemist-purple/30 mb-4">
-            <Flask size={14} className="text-alchemist-gold mr-2" />
+            <FlaskConical size={14} className="text-alchemist-gold mr-2" />
             <span className="text-sm font-medium">Mystical Capabilities</span>
           </div>
           

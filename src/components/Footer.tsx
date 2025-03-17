@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, ArrowRight, Flask } from 'lucide-react';
+import { Mail, Phone, ArrowRight, FlaskConical } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="space-y-4">
             <a href="/" className="flex items-center space-x-2 font-medieval text-2xl text-white mb-4">
               <span className="bg-alchemist-purple/20 border border-alchemist-purple/30 rounded-full p-2">
-                <Flask className="h-6 w-6 text-alchemist-purple" strokeWidth={1.5} />
+                <FlaskConical className="h-6 w-6 text-alchemist-purple" strokeWidth={1.5} />
               </span>
               <div className="flex flex-col">
                 <span className="text-gradient-primary font-bold leading-tight">Alchemist Scientist GPT</span>
@@ -32,7 +32,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-alchemist-purple/20 border border-alchemist-purple/30 text-white hover:bg-alchemist-purple/30 transition-colors"
               >
-                <Flask size={18} />
+                <FlaskConical size={18} />
               </a>
             </div>
           </div>

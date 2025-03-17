@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Flask, ArrowRight } from 'lucide-react';
+import { Menu, X, FlaskConical, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Header = () => {
@@ -30,7 +30,7 @@ const Header = () => {
           className="flex items-center space-x-2 font-medieval text-2xl text-white group"
         >
           <span className="bg-alchemist-purple/20 border border-alchemist-purple/30 rounded-full p-2 group-hover:bg-alchemist-purple/30 transition-all duration-300">
-            <Flask 
+            <FlaskConical 
               className="h-6 w-6 text-alchemist-purple group-hover:text-white transition-colors duration-300" 
               strokeWidth={1.5} 
             />
