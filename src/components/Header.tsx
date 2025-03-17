@@ -2,10 +2,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, FlaskConical, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   // Track scroll position
   useEffect(() => {
@@ -36,8 +38,14 @@ const Header = () => {
             />
           </span>
           <div className="flex flex-col">
-            <span className="text-gradient-primary font-bold leading-tight">Alchemist Scientist GPT</span>
-            <span className="text-xs text-gray-400 font-sans">Presented by <a href="https://aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-alchemist-blue hover:text-alchemist-blue/80 transition-colors">AiWebTools.AI</a></span>
+            <span className="text-gradient-primary font-bold leading-tight text-sm md:text-base lg:text-xl">
+              Alchemist Scientist GPT
+            </span>
+            {!isMobile && (
+              <span className="text-xs text-gray-400 font-sans">
+                Presented by <span className="text-alchemist-blue hover:text-alchemist-blue/80 transition-colors">AiWebTools.AI</span>
+              </span>
+            )}
           </div>
         </a>
         
