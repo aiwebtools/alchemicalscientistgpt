@@ -109,34 +109,34 @@ const Header = () => {
       
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 glass-panel py-4 px-6 animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-alchemist-darker/95 backdrop-blur-lg border-t border-white/10 py-4 px-6 shadow-lg animate-fade-in">
           <nav className="flex flex-col space-y-4">
             <a 
               href="https://chatgpt.com/g/g-67d825333a388191b371bba6a29b939f-alchemist-scientist-gpt" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-white hover:text-alchemist-purple transition-colors py-2"
+              className="text-white hover:text-alchemist-purple transition-colors py-2 px-3 rounded-md hover:bg-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Alchemist Scientist GPT
             </a>
             <a 
               href="#features" 
-              className="text-white hover:text-alchemist-purple transition-colors py-2"
+              className="text-white hover:text-alchemist-purple transition-colors py-2 px-3 rounded-md hover:bg-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Features
             </a>
             <a 
               href="#faq" 
-              className="text-white hover:text-alchemist-purple transition-colors py-2"
+              className="text-white hover:text-alchemist-purple transition-colors py-2 px-3 rounded-md hover:bg-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               FAQ
             </a>
             <a 
               href="#disclaimer" 
-              className="text-white hover:text-alchemist-purple transition-colors py-2"
+              className="text-white hover:text-alchemist-purple transition-colors py-2 px-3 rounded-md hover:bg-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Disclaimer
@@ -145,7 +145,7 @@ const Header = () => {
               href="https://aiwebtools.ai" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-white hover:text-alchemist-purple transition-colors py-2"
+              className="text-white hover:text-alchemist-purple transition-colors py-2 px-3 rounded-md hover:bg-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               More AI Tools
