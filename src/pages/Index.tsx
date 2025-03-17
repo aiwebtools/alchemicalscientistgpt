@@ -6,7 +6,7 @@ import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 import Legal from '../components/Legal';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 import ConsentModal from '../components/ConsentModal';
 
 const Index = () => {
