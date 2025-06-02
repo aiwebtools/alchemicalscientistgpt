@@ -17,7 +17,7 @@ const FooterCopyright = () => {
           Privacy
         </a>
         <a 
-          href="https://aiwebtools.ai/terms-of-services"
+          href="https://aiwebtools.lovable.app/disclaimers"
           target="_blank" 
           rel="noopener noreferrer"
           className="text-gray-500 text-sm hover:text-alchemist-purple transition-colors"

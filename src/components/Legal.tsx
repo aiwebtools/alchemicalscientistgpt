@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Shield } from 'lucide-react';
+import { Shield, Info } from 'lucide-react';
 
 const Legal = () => {
   return (
@@ -8,6 +7,16 @@ const Legal = () => {
       <div className="absolute inset-0 bg-alchemist-glow opacity-50"></div>
       
       <div className="container mx-auto px-6 relative z-10">
+        {/* Small Disclaimer Notice */}
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center py-2 px-4 rounded-full bg-alchemist-purple/10 border border-alchemist-purple/20 mb-4">
+            <Info size={16} className="text-alchemist-gold mr-2" />
+            <span className="text-sm font-medium text-gray-300">
+              For informational, educational, and research purposes only
+            </span>
+          </div>
+        </div>
+
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center py-1 px-3 rounded-full bg-alchemist-purple/20 border border-alchemist-purple/30 mb-4">
             <Shield size={14} className="text-alchemist-gold mr-2" />

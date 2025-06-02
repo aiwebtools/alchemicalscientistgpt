@@ -49,7 +49,7 @@ export const LegalLinks = () => {
         isExternal={true} 
       />
       <FooterLink 
-        href="https://aiwebtools.ai/terms-of-services" 
+        href="https://aiwebtools.lovable.app/disclaimers" 
         label="Terms of Service" 
         isExternal={true} 
       />
