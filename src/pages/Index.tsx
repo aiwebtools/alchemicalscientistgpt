@@ -12,13 +12,22 @@ import ConsentModal from '../components/ConsentModal';
 const Index = () => {
   useEffect(() => {
     // Update document title
-    document.title = "Alchemist Scientist GPT - Medieval Alchemy Meets Modern Science";
+    document.title = "Alchemist Scientist GPT - Medieval Alchemy Meets Modern Science | AI Chemistry Tutor";
+    
+    // Add meta description if not already set
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription?.getAttribute('content')) {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Learn chemistry through medieval alchemy with our AI tutor. Interactive experiments, historical context, and immersive storytelling make science education engaging and memorable.';
+      document.head.appendChild(meta);
+    }
   }, []);
 
   return (
     <div className="min-h-screen antialiased">
       <Header />
-      <main>
+      <main role="main">
         <Hero />
         <Features />
         <Testimonials />

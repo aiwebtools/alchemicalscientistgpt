@@ -127,25 +127,26 @@ const Hero = () => {
       <canvas
         ref={canvasRef}
         className="absolute inset-0 z-0"
+        aria-hidden="true"
       />
       
       {/* Decorative elements */}
-      <div className="absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 animate-float animate-delay-300">
+      <div className="absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 animate-float animate-delay-300" aria-hidden="true">
         <Atom size={80} className="text-alchemist-purple opacity-10" />
       </div>
-      <div className="absolute bottom-1/3 right-1/4 transform translate-x-1/2 translate-y-1/2 animate-float animate-delay-700">
+      <div className="absolute bottom-1/3 right-1/4 transform translate-x-1/2 translate-y-1/2 animate-float animate-delay-700" aria-hidden="true">
         <ThermometerSun size={60} className="text-alchemist-blue opacity-10" />
       </div>
-      <div className="absolute top-2/3 left-1/3 transform -translate-x-1/2 -translate-y-1/2 animate-float animate-delay-500">
+      <div className="absolute top-2/3 left-1/3 transform -translate-x-1/2 -translate-y-1/2 animate-float animate-delay-500" aria-hidden="true">
         <Beaker size={70} className="text-alchemist-green opacity-10" />
       </div>
       
       <div className="container mx-auto px-6 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side content */}
-          <div className="space-y-8 opacity-0 animate-slide-up" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+          <header className="space-y-8 opacity-0 animate-slide-up" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
             <div className="inline-flex items-center py-1 px-3 rounded-full bg-alchemist-purple/20 border border-alchemist-purple/30">
-              <Sparkles size={14} className="text-alchemist-gold mr-2" />
+              <Sparkles size={14} className="text-alchemist-gold mr-2" aria-hidden="true" />
               <span className="text-sm font-medium">Journey into Medieval Science</span>
             </div>
             
@@ -155,7 +156,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl text-gray-300 leading-relaxed max-w-xl">
-              Embark on a mystical journey with our medieval alchemist AI, where ancient wisdom meets modern science through immersive storytelling and interactive experiments.
+              Embark on a mystical journey with our medieval alchemist AI, where ancient wisdom meets modern science through immersive storytelling and interactive chemistry experiments.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -164,19 +165,21 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gradient-to-r from-alchemist-purple to-alchemist-blue text-white font-medium text-lg transition-all hover:shadow-lg hover:shadow-alchemist-purple/20 group"
+                aria-label="Start learning chemistry with Alchemist Scientist GPT"
               >
                 Begin Your Journey
-                <ArrowRight size={18} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
+                <ArrowRight size={18} className="ml-2 transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
               </a>
               
               <a 
                 href="#features"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-transparent border border-alchemist-purple/50 text-white font-medium text-lg hover:bg-alchemist-purple/10 transition-all"
+                aria-label="Learn more about our features"
               >
                 Discover More
               </a>
             </div>
-          </div>
+          </header>
           
           {/* Right side image */}
           <div className="relative h-[450px] w-full opacity-0 animate-slide-up" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
@@ -185,8 +188,9 @@ const Hero = () => {
                 <a href="https://ideogram.ai/assets/image/lossless/response/C4irnciyRNmzJ3dKxTdseg" target="_blank" rel="noopener noreferrer">
                   <img 
                     src="https://ideogram.ai/assets/image/lossless/response/C4irnciyRNmzJ3dKxTdseg" 
-                    alt="Alchemist Scientist GPT" 
+                    alt="Medieval alchemist laboratory with mystical equipment and chemical apparatus" 
                     className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
+                    loading="eager"
                   />
                 </a>
               </div>
@@ -196,8 +200,8 @@ const Hero = () => {
                 </blockquote>
               </div>
             </div>
-            <div className="absolute -bottom-5 -right-5 w-48 h-48 bg-alchemist-purple/20 rounded-full blur-3xl"></div>
-            <div className="absolute -top-5 -left-5 w-32 h-32 bg-alchemist-blue/20 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-5 -right-5 w-48 h-48 bg-alchemist-purple/20 rounded-full blur-3xl" aria-hidden="true"></div>
+            <div className="absolute -top-5 -left-5 w-32 h-32 bg-alchemist-blue/20 rounded-full blur-3xl" aria-hidden="true"></div>
           </div>
         </div>
       </div>

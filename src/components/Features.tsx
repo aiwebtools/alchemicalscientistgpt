@@ -39,14 +39,14 @@ const Features = () => {
   return (
     <section id="features" className="py-24 relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-alchemist-grid bg-[size:30px_30px] opacity-10"></div>
-      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-alchemist-dark to-transparent"></div>
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-alchemist-dark to-transparent"></div>
+      <div className="absolute inset-0 bg-alchemist-grid bg-[size:30px_30px] opacity-10" aria-hidden="true"></div>
+      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-alchemist-dark to-transparent" aria-hidden="true"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-alchemist-dark to-transparent" aria-hidden="true"></div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <header className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center py-1 px-3 rounded-full bg-alchemist-purple/20 border border-alchemist-purple/30 mb-4">
-            <FlaskConical size={14} className="text-alchemist-gold mr-2" />
+            <FlaskConical size={14} className="text-alchemist-gold mr-2" aria-hidden="true" />
             <span className="text-sm font-medium">Mystical Capabilities</span>
           </div>
           
@@ -57,16 +57,17 @@ const Features = () => {
           <p className="text-gray-300 text-lg">
             Embark on a journey through time with our AI Alchemist, blending ancient wisdom with modern science through these mystical abilities.
           </p>
-        </div>
+        </header>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
           {features.map((feature, index) => (
-            <div 
+            <article 
               key={index} 
               className="glass-panel rounded-xl p-6 backdrop-blur-lg border border-white/10 transition-all duration-300 hover:shadow-neon-purple hover:border-alchemist-purple/30 opacity-0 animate-slide-up" 
               style={{ animationDelay: `${200 + index * 100}ms`, animationFillMode: 'forwards' }}
+              role="listitem"
             >
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-alchemist-darker border border-white/5 mb-5">
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-alchemist-darker border border-white/5 mb-5" aria-hidden="true">
                 {feature.icon}
               </div>
               
@@ -75,7 +76,7 @@ const Features = () => {
               <p className="text-gray-300">
                 {feature.description}
               </p>
-            </div>
+            </article>
           ))}
         </div>
       </div>
