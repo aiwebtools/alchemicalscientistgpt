@@ -35,7 +35,7 @@ export const QuickLinks = () => {
       <FooterLink href="#features" label="Features" />
       <FooterLink href="#faq" label="FAQ" />
       <FooterLink href="#disclaimer" label="Disclaimer" />
-      <FooterLink href="https://aiwebtools.ai" label="More AI Tools" isExternal={true} />
+      <FooterLink href="https://aiwebtools.lovable.app/?via=aiwebtools" label="More AI Tools" isExternal={true} />
     </ul>
   );
 };
