@@ -28,7 +28,7 @@ const FooterContact = () => {
       </ul>
       
       <a
-        href="https://aiwebtools.ai"
+        href="https://aiwebtools.lovable.app/?via=aiwebtools"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-6 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-alchemist-purple to-alchemist-blue text-white font-medium text-sm transition-all hover:shadow-neon-purple"
